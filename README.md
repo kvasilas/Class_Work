@@ -1,2 +1,2 @@
 # EE-553
-Graduate Level C++ class
+Graduate Level Computer Engineering C++ class 
