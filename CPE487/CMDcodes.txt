@@ -1,0 +1,5 @@
+ghdl -s fileName.vhdl (syntax check)
+ghdl -a fileName.vhdl (compile) can also do => ghdl -a fileName.vhdl testbench.vhdl
+ghdl -e entityNameBench (elaborate)
+ghdl -r entityNameBench (run)
+ghdl -r entityNameBench --vcd=newname.vcd (run and generate vcd dump file)
