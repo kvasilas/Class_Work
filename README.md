@@ -8,6 +8,7 @@ CPE stands for Computer Engineering, EE for Electrical Engineering, and FE for F
 
 ## List of Classes
 - CPE 322 - Engineering Desing 6
+- CPE 360 - Data Structures and Algorithms
 - CPE 462 - Introduction to Image Processing and Coding
 - CPE 487 - Digital Systems Design
 - CPE 555 - Real-Time and Embedded Systems
