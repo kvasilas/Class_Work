@@ -1,0 +1,41 @@
+$date
+  Wed Oct 03 12:52:50 2018
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 2 ! input[1:0] $end
+$var reg 2 " output[1:0] $end
+$scope module uut $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % s $end
+$var reg 1 & c $end
+$upscope $end
+$enddefinitions $end
+#0
+b00 !
+b00 "
+0#
+0$
+0%
+0&
+#10000000
+b01 !
+b01 "
+1#
+1%
+#20000000
+b10 !
+0#
+1$
+#30000000
+b11 !
+b10 "
+1#
+0%
+1&
+#40000000

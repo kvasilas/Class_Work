@@ -1,0 +1,7 @@
+v 3
+file . "fulladdr.vhdl" "20181002001850.000" "20181002122139.419":
+  entity full_adder at 1( 0) + 0 on 15;
+  architecture behavioral of full_adder at 12( 203) + 0 on 16;
+file . "addr_tb.vhdl" "20181002002048.000" "20181002122247.086":
+  entity full_adder_testbench at 1( 0) + 0 on 19;
+  architecture behavior of full_adder_testbench at 5( 104) + 0 on 20;

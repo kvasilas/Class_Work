@@ -1,0 +1,7 @@
+v 3
+file . "ha.vhdl" "20181003163958.000" "20181003125241.900":
+  entity half_adder at 1( 0) + 0 on 15;
+  architecture behavioral of half_adder at 12( 186) + 0 on 16;
+file . "ha_tb.vhdl" "20181003165234.000" "20181003125241.901":
+  entity half_adder_testbench at 1( 0) + 0 on 17;
+  architecture behavior of half_adder_testbench at 6( 106) + 0 on 18;
