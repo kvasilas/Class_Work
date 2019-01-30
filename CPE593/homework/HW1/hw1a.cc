@@ -29,5 +29,8 @@ void eratosthenes (int n) {
 
 
 int main (){
-    eratosthenes(100);
+    int x;
+    cout << "enter a number: " << endl;
+    cin >> x;
+    eratosthenes(x);
 }
