@@ -4,6 +4,7 @@
  * Name: Kirk Vasilas
  * Collaboraters: Justin Trugmann, Dave Lehman
  * Pledge: I pledge my honor that I have abided by the stevens honor code.
+ *Compiles with g++ -std=c++11 for chrono
  */
 #include <iostream>
 #include <random>
@@ -57,7 +58,7 @@ int main() {
     auto duration = duration_cast<milliseconds>(stop - start);
     cout << numTrials <<" memoized trials: " << duration.count() << " milliseconds"<< endl;
     cout << "un-memoized way is too slow. "<< "The code to compare the times is below commented out"<< endl;
-    
+
     /*
     auto start1 = high_resolution_clock::now();
     for (int i = 0; i < 1; i++) {
