@@ -4,7 +4,7 @@
  * Name: Kirk Vasilas
  * Collaboraters: Justin Trugmann, Dave Lehman
  * Pledge: I pledge my honor that I have abided by the stevens honor code.
- *Compiles with g++ -std=c++11 for chrono
+ * Compiles with g++ -std=c++11 for chrono
  */
 #include <iostream>
 #include <random>
