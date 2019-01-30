@@ -12,6 +12,6 @@ int main() {
         array[i] = i;
     }
     auto stop = high_resolution_clock::now();
-    auto duration = duration_cast<microseconds>(stop - start);
-    cout << duration.count();
+    auto duration = duration_cast<milliseconds>(stop - start);
+    cout << duration.count() << endl;
 }
