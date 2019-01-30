@@ -3,35 +3,31 @@
  * Due: 2/1/19
  * Name: Kirk Vasilas
  * Cite: Justin Trugman, Dave Lehman
+ * https://www.geeksforgeeks.org/c-program-for-sieve-of-eratosthenes/
  * Pledge: I pledge my honor that I have abided by the stevens honor code.
  */
 
- #include <iostream>
- #include <vector>
- #include <cmath>
- using namespace std;
+#include <iostream>
+#include <vector>
+#include <cmath>
+using namespace std;
 
- void eratosthenes (int n) {
-    bool is_prime[n]; //store all values
-    for (int i = 0; i<= sizeof(is_prime); i++){
-        is_prime[i] = true;
-    }
-    
-    for (int i = 2; i = sqrt(n); i++){ /*use sqrt because it steps down faster than /2 */
-        if(is_prime[i] == true){
-            for(int j = i*2; j <= n; j+=i){
-                is_prime[j] = false;
-            }
+void eratosthenes (int n) {
+    bool prime[n+1];
+    memset(prime, true, sizeof(prime));
+    for (int i = 2; i*i <= n; i++){
+        if(prime[i] == true){
+            for (int j=i*2; j<=n; j += i){prime[j] = false;}
         }
     }
-    
-    for(int i = 2; i <= sizeof(is_prime); i++){
-        if(is_prime[i] == true) {cout << i << '\t';}
-    }
-    cout << '\n';
- }
+    //count primes
+    int sum =0;
+    for (int8_t i = 2; i < sizeof(prime); i++) {sum +=prime[i];}
+
+    cout << sum <<'\n';
+}
 
 
- int main (){
-     eratosthenes(10);
- }
+int main (){
+    eratosthenes(100);
+}

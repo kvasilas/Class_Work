@@ -35,7 +35,8 @@ double choose_eff(int n, int r){
 
 int main() {
     int numTrials = 100;
-	//  cin >> numTrials;
+    //cout << "enter number of trials" << endl;
+    //cin >> numTrials;
     //100 trials = 0.107s
     //1000 trials = 2.821s
     //10,000 trials = 22.517s
@@ -44,7 +45,7 @@ int main() {
 
 	default_random_engine generator;
 	uniform_int_distribution<int> distribution(0,500);
-    
+
     auto start = high_resolution_clock::now();
     for (int i = 0; i < numTrials; i++) {
 		int n = distribution(generator);
