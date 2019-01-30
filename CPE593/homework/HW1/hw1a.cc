@@ -2,7 +2,7 @@
  * Homework # : HW1a Eratosthenes
  * Due: 2/1/19
  * Name: Kirk Vasilas
- * Cite:
+ * Cite: Justin Trugman, Dave Lehman
  * Pledge: I pledge my honor that I have abided by the stevens honor code.
  */
 
@@ -12,27 +12,22 @@
  using namespace std;
 
  void eratosthenes (int n) {
+    bool is_prime[n]; //store all values
+    for (int i = 0; i<= sizeof(is_prime); i++){
+        is_prime[i] = true;
+    }
 
-     // mark all items in array as true
-     bool prime[n];
-     for (int i = 0; i <= sizeof(prime); i++) {
-         prime[i] = true;
-     }
-
-
-     // mark primes equal to false
-     for (int i = 2; i <= sqrt(n); i++){
-         if (prime[i] == true){
-             for(int j = i * 2; j <= n; j += i){
-                 prime[j] = false;
-             }
-         }
-     }
-
-
+    for (int i = 2; i = sqrt(n); i++){/*use sqrt because it steps faster than /2 */
+        if(is_prime[i] == true){
+            for(int j = i*2; j <= n; j+=i){
+                is_prime[j] = false;
+            }
+        }
+    }
+    
      // print prime numbers
-      for (int i = 2; i <= sizeof(prime); i++) {
-          if (prime[i] == true)
+      for (int i = 2; i <= sizeof(is_prime); i++) {
+          if (is_prime[i] == true)
              cout << i << '\t';
      }
      cout << '\n';
