@@ -20,7 +20,7 @@ double choose_unef(int n, int r){
 }
 
 double choose_eff(int n, int r){
-    int memoize[n+1][r+1];
+    static int memoize[n+1][r+1];
     for(int i = 0; i <= n; i++){
         for(int j = 0; j <=min(i,r); j++){
             if(j == 0 || j == i ){
@@ -36,8 +36,8 @@ double choose_eff(int n, int r){
 
 int main() {
     int numTrials = 100;
-    //cout << "enter number of trials" << endl;
-    //cin >> numTrials;
+    cout << "enter number of trials" << endl;
+    cin >> numTrials;
     //100 trials = 0.107s
     //1000 trials = 2.821s
     //10,000 trials = 22.517s
