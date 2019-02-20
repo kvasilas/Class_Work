@@ -33,3 +33,4 @@
 
 #other
 *.DS_Store
+*.stackdump
