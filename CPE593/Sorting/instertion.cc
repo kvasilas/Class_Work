@@ -4,6 +4,11 @@
 #include <fstream>
 using namespace std;
 
+void print_array(int array[], int len){
+    for (int i = 0; i < len; i++) { cout << array[i] << '\t'; }
+    cout << '\n';
+}
+
 void insertion_sort(int array[], int length){
     for (int i = 1; i < length; i++) {
         for (int j = i; j >= 1; j--) {
@@ -11,24 +16,20 @@ void insertion_sort(int array[], int length){
             else{break;}
         }
     }
-    return array;
+    print_array(array, length);
 }
-
-
 
 int main(){
    int len;
    ifstream file("hw3.dat");
    if(file.is_open()) {
        file >> len;
-       int a[n];
+       int a[len];
        for (int i = 0; i < len; i++){ file >> a[i]; }
        cout << "Array Length = " << len << '\n';
        for (int i = 0; i < len; i++){ cout << a[i] << '\t'; }
-       a = insertion_sort(a, len);
        cout<<"\nArray after sorting:\n";
-       for(int i = 0; i < len; i++)
-           cout << a[i] << '\t';
+       insertion_sort(a, len);
    }
    return 0;
 }
