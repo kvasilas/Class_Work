@@ -1,0 +1,7 @@
+%vid = videoinput('winvideo', 1);
+%set(vid, 'ReturnedColorSpace', 'RGB');
+%img = getsnapshot(vid);
+%imshow(img)
+webcamlist
+
+pic = snapshot(obj);
