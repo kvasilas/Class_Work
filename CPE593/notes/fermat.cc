@@ -41,7 +41,7 @@ bool millerRabin(uint64_t p, int k){
             continue;
         for (int i = 0; i<s-1; i++){
             x = (x*x) % p;
-            if (x == n-1)
+            if (x == s-1)
                 goto nextTrial;
         }
         return false;
