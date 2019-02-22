@@ -45,13 +45,14 @@ bool millerRabin(uint64_t p, int k){
                 goto nextTrial;
         }
         return false;
-    nextTrial:
+    nextTrial:;
     }
     return true;
 }
 
 int main() {
-    cout << fermat(561, 5) << '\n';
-    cout << fermat(1000, 5) << '\n';
-    cout << fermat(17, 5) << '\n';
+    cout <<  "561" << " fermat " << fermat(561, 5) << '\n';
+    cout << "1000" << " fermat " << fermat(1000, 5) << '\n';
+    cout << "17" << " fermat " << fermat(17, 5) << '\n';
+    cout << "17" << " Miller " << millerRabin(17, 5) << '\n';
 }
