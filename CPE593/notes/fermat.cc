@@ -29,7 +29,7 @@ bool fermat(uint64_t p, int k){
 bool millerRabin(uint64_t p, int k){
     for (int i = 0; i < k; i++) {
         uint64_t a = random(2, p-2);
-        int s;
+        int s=0;
         uint64_t d = p-1;
         uint64_t mask = 1;
         while(d & mask == 0){
