@@ -22,8 +22,8 @@ bool fermat(uint64_t p, int k){
         if (powermod(a, p-1, p) != 1) {
             return false;
         }
-    return true;
     }
+    return true;
 }
 
 bool millerRabin(uint64_t p, int k){
