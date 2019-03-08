@@ -10,7 +10,7 @@ public:
     GrowArray() : data(nullptr), len(0){ }
     void addEnd(){ /*c++ O(1), Java O(n)*/
         int* old = data;
-        data = new int[len+10];
+        data = new int[len+1];
         for (int i = 0; i < len; i++)
             data[i] = old[i];
         delete [] old;
