@@ -6,7 +6,7 @@ int random(int a, int b){
     return a + rand() % (b-a+1);
 }
 
-powermod(uint64_t a, uint64_t n, uint64_t m){
+double powermod(uint64_t a, uint64_t n, uint64_t m){
     uint64_t prod = 1;
     while(n>0){
         if (n%2 != 0) {prod = (prod*a)%m;}

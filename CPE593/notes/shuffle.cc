@@ -7,7 +7,14 @@ default_random_engine generator;
 void fisher_yates(int a[], int n){
     for (int i = n-1 ; i > 0; i--) {
         uniform_int_distribution<int> dist(0,i);
-        swap(x[i], x[dist(generator)]);
+        swap(a[i], a[dist(generator)]);
+    }
+}
+
+void fisher_yates2(int a[], int n){
+    for (int i = n-1 ; i > 0; i--) {
+        int pick = rand(0, i);
+        swap(a[i], a[pick]);
     }
 }
 
