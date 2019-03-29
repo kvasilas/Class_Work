@@ -15,5 +15,4 @@ public:
 	void enqueue(int v) { impl.addLast(v); } //O(1)
 	int dequeue() { impl.removeFirst(); } //O(1)
 	bool isEmpty() const { return impl.isEmpty(); )
-
 };

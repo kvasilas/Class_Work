@@ -31,8 +31,8 @@ int BinarySearch_recurion(int x[], int L, int r, int target){
 public interface Func_one_Var{
     public double f(double x);
 }
-//public class F1 implements 
-//double bisection 
+//public class F1 implements
+//double bisection
 
 
 int golden_mean(){}
@@ -40,5 +40,5 @@ int golden_mean(){}
 
 
 int main(){
-    
+
 }
