@@ -58,5 +58,7 @@ int main(){
     while(g>>check)
         m.check_dict(check);
 
+    m.display_hist();
+
     return 0;
 }
