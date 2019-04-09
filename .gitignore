@@ -39,3 +39,4 @@ __pycache__/
 #other
 *.DS_Store
 *.stackdump
+*.google-cookie
