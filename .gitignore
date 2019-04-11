@@ -40,3 +40,4 @@ __pycache__/
 *.DS_Store
 *.stackdump
 *.google-cookie
+*.512
