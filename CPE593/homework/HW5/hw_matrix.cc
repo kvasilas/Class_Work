@@ -2,12 +2,26 @@
 
 class Matrix{
 private:
-
+	int rows, cols;
+	double* m;
 public:
-    Matrix(int row, int col, int val){}
-    ~Matrix(){
+	Matrix(int rows, int cols, double val) : rows(rows), cols(cols),
+																					 m(new double[rows*cols]) {
+		for (int i = 0; i < rows*cols; i++)
+			m[i] = val;
+	}
+	~Matrix() {
 
-    }
+	}
+	Matrix(const Matrix& orig) = delete;
+	Matrix operator =(const Matrix& orig) = delete;
+    double& operator ()(int r, int c) {
+		return m[r*cols + c];
+	}
+
+	double operator ()(int r, int c) const {
+		return m[r*cols + c];
+	}
     //overide =
     //overide +
     //overide *
