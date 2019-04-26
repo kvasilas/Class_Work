@@ -1,35 +1,82 @@
-#include "Matrix.cc"
+/*
+ * Homework # : Matrix
+ * Due: 4/25/19
+ * Name: Kirk Vasilas
+ * Cite: Justin Trugman, Dave Lehman, Daniel Pinto
+ * Pledge: I pledge my honor that I have abided by the stevens honor code.
+ */
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
 
 class Matrix{
 private:
 	int rows, cols;
 	double* m;
+	Matrix(int r, int c, char*) : rows(r), cols(c), m(new double[r*c]) {}
 public:
-	Matrix(int rows, int cols, double val) : rows(rows), cols(cols),
-																					 m(new double[rows*cols]) {
+	Matrix(int r, int c, double val = 0) : rows(r), cols(c), m(new double[rows*cols]) {
 		for (int i = 0; i < rows*cols; i++)
 			m[i] = val;
 	}
-	~Matrix() {
+	~Matrix() { delete [] m; }
 
-	}
-	Matrix(const Matrix& orig) = delete;
-	Matrix operator =(const Matrix& orig) = delete;
-    double& operator ()(int r, int c) {
-		return m[r*cols + c];
-	}
+	Matrix(const Matrix& orig);
 
-	double operator ()(int r, int c) const {
-		return m[r*cols + c];
-	}
-    //overide =
-    //overide +
-    //overide *
-    //overide <<
+	Matrix operator =(const Matrix& orig);
+
+	Matrix(Matrix&& orig) : rows(orig.rows), cols(orig.cols), m(orig.m) {
+      orig.m = nullptr;
+   }
+
+   friend Matrix operator+(const Matrix& a, const Matrix& b) {
+      if(a.rows != b.rows || a.cols != b.cols)
+         throw "Bad size";
+      Matrix ans(a.rows, a.cols);
+      for(int i = 0; i < a.rows*a.cols; ++i)
+         ans.m[i] = a.m[i] + b.m[i];
+
+      return ans;
+   }
+      friend Matrix operator*(const Matrix& a, const Matrix &b) {
+      if(a.cols != b.rows)
+         throw "Size incorrect";
+
+      Matrix ans(a.rows, b.cols);
+      for(int k = 0; k < a.rows; k++) {
+         for(int j = 0; j < b.cols; j++) {
+            double dot = 0;
+            for(int i = 0; i < a.cols; i++)
+               dot += a(k,i) * b(i,j);
+            ans(k,j) = dot;
+         }
+      }
+      return ans;
+   }
+   friend Matrix operator-(const Matrix& a, const Matrix& b) {
+      if(a.rows != b.rows || a.cols != b.cols)
+         throw "Size incorrect";
+
+      Matrix ans(a.rows, a.cols);
+      for(int i = 0; i < a.rows*a.cols; ++i)
+         ans.m[i] = a.m[i] - b.m[i];
+
+      return ans;
+   }
 
 };
 
+int main() {
+  Matrix a(3,4,0.0);  // O(mn) = O(3*4)
+  Matrix b(4,2,1.0); //O(n*p) = O(4*2);
+  Matrix c = b; // make a copy O(np)
+  Matrix d = a + a;  //O(mn)
+  Matrix e = a * b;  //O(mnp)    O(n^3)
+}
 
+/*
 int main() {
   Matrix a(3,4,0.0);  // O(mn) = O(3*4)
   Matrix b(4,2,1.0); //O(n*p) = O(4*2);
@@ -39,38 +86,11 @@ int main() {
   b(1,1) = 5.2; // calls operator()(int,int)
   cout << b(1,2); // calls operator()(int,int)const
   e = b;
-	/*
-		a11 a12 a13      x           B1
-		a21 a22 a23      y    =     B2
-       a31 a32 a33      z           B3
-	 */
   ifstream f("hw5.dat");
   Matrix A = Matrix::read(f);
   vector<double> B = read(A.getRows(), f);
   vector<double> x = solve(A, B);
 
 	// you must print out the vector x
-
-#if 0
-	// not required for homework!
-  Matrix L, U;
-  A.LU(L, U); // LU = A
-  // Ax1 = B1    Ax2 = B2    Ax3 = B3
-	// just solve once, use L to compute answers
-
-
-	// generalized least squares
-  A.leastSquares(B);
-
-	// QR Factorization
-	// PCA Principle Component Analysis
-  for (auto v : x) {
-    cout << v << '\t';
-  }
-  cout << '\n';
-
-
-  // automatically call destructor
-  //~Matrix(); //O(1)
-#endif
 }
+*/
