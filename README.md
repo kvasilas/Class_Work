@@ -12,6 +12,7 @@ CPE stands for Computer Engineering, EE for Electrical Engineering, and FE for F
 - CPE 345 - Modeling and Simulation
 - CPE 462 - Introduction to Image Processing and Coding
 - CPE 487 - Digital Systems Design
+- CPE 490 - Information Sysytems
 - CPE 555 - Real-Time and Embedded Systems
 - CPE 593 - Applied Data Structures and Algorithms
 - EE 553  - Engineering C++
