@@ -75,22 +75,3 @@ int main() {
   Matrix d = a + a;  //O(mn)
   Matrix e = a * b;  //O(mnp)    O(n^3)
 }
-
-/*
-int main() {
-  Matrix a(3,4,0.0);  // O(mn) = O(3*4)
-  Matrix b(4,2,1.0); //O(n*p) = O(4*2);
-  Matrix c = b; // make a copy O(np)
-  Matrix d = a + a;  //O(mn)
-  Matrix e = a * b;  //O(mnp)    O(n^3)
-  b(1,1) = 5.2; // calls operator()(int,int)
-  cout << b(1,2); // calls operator()(int,int)const
-  e = b;
-  ifstream f("hw5.dat");
-  Matrix A = Matrix::read(f);
-  vector<double> B = read(A.getRows(), f);
-  vector<double> x = solve(A, B);
-
-	// you must print out the vector x
-}
-*/
