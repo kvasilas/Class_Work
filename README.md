@@ -16,4 +16,5 @@ CPE stands for Computer Engineering, EE for Electrical Engineering, and FE for F
 - CPE 555 - Real-Time and Embedded Systems
 - CPE 593 - Applied Data Structures and Algorithms
 - EE 553  - Engineering C++
+- EN 250  - Quantitative Biology
 - FE 520  - Python for Financial Applications
