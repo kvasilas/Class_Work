@@ -1,4 +1,11 @@
-print(sample(1:3))
-print(sample(1:3, size=3, replace=FALSE))  # same as previous line
-print(sample(c(2,5,3), size=4, replace=TRUE)
-print(sample(1:2, size=10, prob=c(1,3), replace=TRUE))
+
+library(ggplot2)
+
+# Use stdout as per normal...
+print("Hello, world!")
+
+# Use plots...
+plot(cars)
+
+# Even ggplot!
+qplot(wt, mpg, data = mtcars, colour = factor(cyl))
