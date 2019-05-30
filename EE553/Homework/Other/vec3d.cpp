@@ -1,10 +1,8 @@
 /*
-
   * Hw4a - Vec3d
   * Kirk Vasilas
   * Collaborators - Christopher Keenan
   *I pledge my honor that i have abided by the stevens honor code
-
  */
 
 #include <iostream>
