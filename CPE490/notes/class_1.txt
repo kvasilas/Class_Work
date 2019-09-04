@@ -1,0 +1,14 @@
+text book is xxxxxx pdf
+
+Layering - packet moving paths
+    Application -> presentation -> Transport -> Network -> DLL -> Phy
+    Application is an "actor" like a host ish.  
+
+    above didnt work too well
+    this did
+    Application -> Transport -> Network -> MAC -> Physical
+    Amazon         move data    routing    
+                                wired/ wireless ... 
+                                how is data moving
+                                
+    computer networks a systes approach
