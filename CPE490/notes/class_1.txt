@@ -12,3 +12,7 @@ Layering - packet moving paths
                                 how is data moving
                                 
     computer networks a systes approach
+
+
+ping www.google.com -c 10  > rawPingData
+to get the raw data of the ping into a file

@@ -1,0 +1,71 @@
+traceroute to www.government.kz (88.204.157.165), 30 hops max, 60 byte packets
+ 1  10.155.0.3 (10.155.0.3)  2.902 ms  3.480 ms  4.032 ms
+ 2  10.255.8.75 (10.255.8.75)  3.053 ms  3.012 ms  2.312 ms
+ 3  gwa.cc.stevens.edu (155.246.151.37)  2.889 ms  2.832 ms  3.362 ms
+ 4  454a0465.cst.lightpath.net (69.74.4.101)  5.403 ms  5.329 ms  4.990 ms
+ 5  64.15.3.144 (64.15.3.144)  5.208 ms  8.244 ms  8.183 ms
+ 6  64.15.2.94 (64.15.2.94)  9.560 ms rtr102-hu0-4-0-1.in.nycmnyzr.cv.net (64.15.0.74)  6.612 ms 64.15.5.36 (64.15.5.36)  5.981 ms
+ 7  * be3033.rcr21.ewr02.atlas.cogentco.com (154.54.11.77)  6.844 ms *
+ 8  be3363.ccr42.jfk02.atlas.cogentco.com (154.54.3.125)  5.913 ms  5.842 ms  5.793 ms
+ 9  * be2896.ccr41.jfk02.atlas.cogentco.com (154.54.84.201)  5.298 ms *
+10  be2317.ccr41.lon13.atlas.cogentco.com (154.54.30.186)  76.105 ms be12194.ccr41.ams03.atlas.cogentco.com (154.54.56.94)  86.101 ms  85.477 ms
+11  be2814.ccr42.fra03.atlas.cogentco.com (130.117.0.142)  91.376 ms be12488.ccr42.ams03.atlas.cogentco.com (130.117.51.42)  82.904 ms be2813.ccr41.fra03.atlas.cogentco.com (130.117.0.122)  89.750 ms
+12  be2814.ccr42.fra03.atlas.cogentco.com (130.117.0.142)  93.821 ms be2845.rcr22.fra06.atlas.cogentco.com (154.54.56.190)  93.604 ms be2813.ccr41.fra03.atlas.cogentco.com (130.117.0.122)  91.840 ms
+13  be2846.rcr22.fra06.atlas.cogentco.com (154.54.37.30)  92.524 ms be2845.rcr22.fra06.atlas.cogentco.com (154.54.56.190)  92.454 ms be2846.rcr22.fra06.atlas.cogentco.com (154.54.37.30)  91.673 ms
+14  149.14.210.82 (149.14.210.82)  92.785 ms 154.25.9.46 (154.25.9.46)  90.923 ms  91.417 ms
+15  * * *
+16  178.210.33.75 (178.210.33.75)  143.628 ms *  141.865 ms
+17  95.59.172.18.static.telecom.kz (95.59.172.18)  170.898 ms 178.210.33.75 (178.210.33.75)  159.427 ms 95.59.172.18.static.telecom.kz (95.59.172.18)  170.307 ms
+18  95.59.172.18.static.telecom.kz (95.59.172.18)  171.380 ms  171.608 ms 95.59.172.10.static.telecom.kz (95.59.172.10)  170.195 ms
+19  * 92.47.145.103 (92.47.145.103)  173.248 ms 95.59.172.42.static.telecom.kz (95.59.172.42)  176.173 ms
+20  82.200.155.50 (82.200.155.50)  178.414 ms *  171.733 ms
+21  92.46.53.66.static.telecom.kz (92.46.53.66)  169.579 ms 82.200.155.50 (82.200.155.50)  186.781 ms 92.46.53.85.static.telecom.kz (92.46.53.85)  186.502 ms
+22  92.46.53.66.static.telecom.kz (92.46.53.66)  170.221 ms 82.200.155.50 (82.200.155.50)  185.394 ms  178.703 ms
+23  * * *
+24  88.204.157.165 (88.204.157.165)  175.487 ms * *
+traceroute to www.government.kz (88.204.157.165), 30 hops max, 60 byte packets
+ 1  10.155.0.3 (10.155.0.3)  3.725 ms  4.196 ms  4.026 ms
+ 2  10.255.8.75 (10.255.8.75)  2.492 ms  3.095 ms  2.913 ms
+ 3  gwa.cc.stevens.edu (155.246.151.37)  3.966 ms  3.742 ms  3.532 ms
+ 4  454a0465.cst.lightpath.net (69.74.4.101)  5.590 ms  5.426 ms  5.498 ms
+ 5  64.15.3.144 (64.15.3.144)  5.597 ms  5.713 ms  5.460 ms
+ 6  451be083.cst.lightpath.net (65.19.113.131)  9.113 ms 451be0da.cst.lightpath.net (65.19.120.218)  7.190 ms 451be083.cst.lightpath.net (65.19.113.131)  10.311 ms
+ 7  be3033.rcr21.ewr02.atlas.cogentco.com (154.54.11.77)  7.608 ms *  7.361 ms
+ 8  be3362.ccr41.jfk02.atlas.cogentco.com (154.54.3.9)  5.022 ms  5.274 ms be3363.ccr42.jfk02.atlas.cogentco.com (154.54.3.125)  5.124 ms
+ 9  be2897.ccr42.jfk02.atlas.cogentco.com (154.54.84.213)  6.179 ms *  6.977 ms
+10  be12194.ccr41.ams03.atlas.cogentco.com (154.54.56.94)  86.116 ms be12488.ccr42.ams03.atlas.cogentco.com (130.117.51.42)  80.436 ms be12194.ccr41.ams03.atlas.cogentco.com (154.54.56.94)  85.662 ms
+11  be12194.ccr41.ams03.atlas.cogentco.com (154.54.56.94)  85.101 ms be2813.ccr41.fra03.atlas.cogentco.com (130.117.0.122)  89.133 ms be2814.ccr42.fra03.atlas.cogentco.com (130.117.0.142)  92.913 ms
+12  be2846.rcr22.fra06.atlas.cogentco.com (154.54.37.30)  89.932 ms be2814.ccr42.fra03.atlas.cogentco.com (130.117.0.142)  93.988 ms be2845.rcr22.fra06.atlas.cogentco.com (154.54.56.190)  92.009 ms
+13  154.25.9.46 (154.25.9.46)  91.826 ms be2846.rcr22.fra06.atlas.cogentco.com (154.54.37.30)  92.502 ms be2845.rcr22.fra06.atlas.cogentco.com (154.54.56.190)  95.071 ms
+14  149.14.210.82 (149.14.210.82)  92.462 ms 154.25.9.46 (154.25.9.46)  92.001 ms 149.14.210.82 (149.14.210.82)  91.722 ms
+15  149.14.210.82 (149.14.210.82)  91.770 ms *  93.757 ms
+16  * * *
+17  95.59.172.18.static.telecom.kz (95.59.172.18)  174.011 ms  173.539 ms  172.935 ms
+18  95.59.172.10.static.telecom.kz (95.59.172.10)  186.065 ms 95.59.172.18.static.telecom.kz (95.59.172.18)  172.186 ms  172.408 ms
+19  92.47.145.103 (92.47.145.103)  170.516 ms 95.59.172.45.static.telecom.kz (95.59.172.45)  174.605 ms 95.59.170.135 (95.59.170.135)  172.092 ms
+20  82.200.155.50 (82.200.155.50)  172.255 ms 95.59.170.135 (95.59.170.135)  171.236 ms 92.47.145.103 (92.47.145.103)  170.187 ms
+21  92.46.53.66.static.telecom.kz (92.46.53.66)  169.237 ms *  169.593 ms
+22  88.204.157.165 (88.204.157.165)  174.760 ms 82.200.155.50 (82.200.155.50)  171.813 ms 92.46.53.66.static.telecom.kz (92.46.53.66)  171.709 ms
+traceroute to www.government.kz (88.204.157.165), 30 hops max, 60 byte packets
+ 1  10.155.0.3 (10.155.0.3)  5.294 ms  4.967 ms  8.017 ms
+ 2  10.255.8.75 (10.255.8.75)  11.084 ms  10.925 ms  14.390 ms
+ 3  gwa.cc.stevens.edu (155.246.151.37)  14.228 ms  17.384 ms  17.219 ms
+ 4  454a0465.cst.lightpath.net (69.74.4.101)  18.100 ms  18.421 ms  18.741 ms
+ 5  64.15.3.144 (64.15.3.144)  21.286 ms  21.345 ms  26.487 ms
+ 6  451be0da.cst.lightpath.net (65.19.120.218)  21.634 ms 64.15.5.36 (64.15.5.36)  15.943 ms 64.15.2.94 (64.15.2.94)  16.355 ms
+ 7  * be3033.rcr21.ewr02.atlas.cogentco.com (154.54.11.77)  11.320 ms *
+ 8  be3362.ccr41.jfk02.atlas.cogentco.com (154.54.3.9)  7.411 ms be2600.rcr23.jfk01.atlas.cogentco.com (154.54.40.29)  9.010 ms  6.598 ms
+ 9  * be2896.ccr41.jfk02.atlas.cogentco.com (154.54.84.201)  6.941 ms *
+10  be2317.ccr41.lon13.atlas.cogentco.com (154.54.30.186)  76.295 ms be12488.ccr42.ams03.atlas.cogentco.com (130.117.51.42)  83.456 ms  82.883 ms
+11  be2813.ccr41.fra03.atlas.cogentco.com (130.117.0.122)  90.114 ms  91.039 ms be2814.ccr42.fra03.atlas.cogentco.com (130.117.0.142)  93.889 ms
+12  be2813.ccr41.fra03.atlas.cogentco.com (130.117.0.122)  90.583 ms  94.666 ms be2846.rcr22.fra06.atlas.cogentco.com (154.54.37.30)  92.853 ms
+13  be2845.rcr22.fra06.atlas.cogentco.com (154.54.56.190)  94.421 ms 154.25.9.46 (154.25.9.46)  89.538 ms  91.331 ms
+14  154.25.9.46 (154.25.9.46)  89.775 ms  92.190 ms 149.14.210.82 (149.14.210.82)  90.460 ms
+15  149.14.210.82 (149.14.210.82)  91.034 ms  174.384 ms  164.175 ms
+16  178.210.33.75 (178.210.33.75)  163.513 ms  156.075 ms  155.373 ms
+17  95.59.172.18.static.telecom.kz (95.59.172.18)  170.982 ms  169.985 ms  170.251 ms
+18  95.59.172.10.static.telecom.kz (95.59.172.10)  170.190 ms 95.59.172.32.static.telecom.kz (95.59.172.32)  170.619 ms 95.59.172.10.static.telecom.kz (95.59.172.10)  171.151 ms
+19  95.59.172.10.static.telecom.kz (95.59.172.10)  171.124 ms 92.47.145.103 (92.47.145.103)  170.556 ms *
+20  92.46.53.85.static.telecom.kz (92.46.53.85)  170.444 ms * 95.59.170.135 (95.59.170.135)  172.884 ms
+21  82.200.155.50 (82.200.155.50)  171.977 ms  170.193 ms  170.862 ms
+22  88.204.157.165 (88.204.157.165)  173.317 ms 92.46.53.66.static.telecom.kz (92.46.53.66)  171.869 ms  170.211 ms
