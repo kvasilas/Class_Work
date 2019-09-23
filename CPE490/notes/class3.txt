@@ -1,2 +1,5 @@
  
 traceroute www.google.com
+
+go to last line and extract total ms
+plot a cdf -> get code online

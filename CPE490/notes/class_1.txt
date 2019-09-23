@@ -16,3 +16,5 @@ Layering - packet moving paths
 
 ping www.google.com -c 10  > rawPingData
 to get the raw data of the ping into a file
+
+awk -f xxx.awk abc.txt > out.txt 
