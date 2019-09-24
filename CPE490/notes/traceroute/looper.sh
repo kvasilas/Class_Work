@@ -4,8 +4,8 @@
 addr="www.government.kz"
 
 
-for ((i = 0 ; i <3 ; i++)); do
+for ((i = 0 ; i < 72; i++)); do
   echo "traceroute $i"
     traceroute $addr >> TraceData
-    sleep 15
+    sleep 300
 done

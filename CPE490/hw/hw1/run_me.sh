@@ -5,11 +5,11 @@ addr="www.google.com"
 
 date > numbers
 
-for ((i = 0 ; i <1 ; i++)); do
+for ((i = 0 ; i <72 ; i++)); do
   echo "traceroute $i"
     traceroute $addr >> TraceData
-    awk -f trace_parse_time.awk TraceData >> times
+    awk -f trace_parse_time.awk TraceData >> time_split
     awk -f trace_parse_number.awk TraceData >> numbers
-    sleep 15
+    sleep 300
 
 done
