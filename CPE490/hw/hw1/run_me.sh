@@ -1,15 +1,15 @@
 #!/bin/bash
 
-#addr="www.government.kz"
-addr="www.google.com"
+addr="www.government.kz"
+#addr="www.google.com"
 
 date > numbers
 
-for ((i = 0 ; i <72 ; i++)); do
+for ((i = 0 ; i <2 ; i++)); do
   echo "traceroute $i"
     traceroute $addr >> TraceData
     awk -f trace_parse_time.awk TraceData >> time_split
-    awk -f trace_parse_number.awk TraceData >> numbers
-    sleep 300
+    #awk -f trace_parse_number.awk TraceData >> numbers
+    sleep 5
 
 done
