@@ -8,7 +8,7 @@ sigma = 3
 n_bins = 72
 x = np.random.normal(mu, sigma, size=72)
 #x = np.ndarray(17.427, 15.960, 22.998, dtype=float)
-print(x)
+#print(x)
 fig, ax = plt.subplots(figsize=(8, 4))
 
 
