@@ -77,7 +77,7 @@ void TimeTask(void *pvParameters){
 	}
 	struct alarm_time curr_time = input_time;
 	struct alarm_time *pxTime;
-	while( (curr_time.min > 0) && (curr_time.sec > 0)){
+	while( (curr_time.min > 0) || (curr_time.sec > 0)){
 
 		if(curr_time.min == 1){
 			if (curr_time.sec == 1){
