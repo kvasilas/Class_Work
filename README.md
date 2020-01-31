@@ -17,6 +17,7 @@ CPE stands for Computer Engineering, EE for Electrical Engineering, and FE for F
 - CPE 556 - Computational Principals of Mobile and Embedded Systems
 - CPE 593 - Applied Data Structures and Algorithms
 - CPE 645 - Design & Analysis Inteligent Network Systems
+- CS 555  - Agile Methods for Software Development
 - EE 553  - Engineering C++
 - EE 584  - Wireless Systems Security
 - EE 605  - Probability and Stochastic Processes

@@ -1,0 +1,58 @@
+0 NOTE all lines until the next note are all correct
+0 HEAD
+0 rn INDI
+1 NAME Rafa /Nadal/
+1 SEX M
+1 BIRT
+2 DATE 3 JUN 1986
+1 DEAT
+2 DATE 31 DEC 2099
+1 FAMC f1
+1 FAMS f2
+0 f2 FAM
+1 HUSB rn
+1 WIFE xp
+1 CHIL aa
+1 MARR 
+2 DATE 1 JUN 1960
+1 DIV
+2 DATE 1 JUN 1961
+0 TRLR
+0 NOTE Everything past this line is not valid
+0 INDI id
+0 FAM id
+0 NAME not valid
+0 SEX not valid
+0 BIRT not valid
+0 DEAT not valid
+0 FAMC not valid
+0 FAMS not valid
+0 MARR not valid
+0 HUSB not valid
+0 WIFE not valid
+0 CHIL not valid
+0 DIV not valid
+0 DATE not valid
+1 INDI not valid
+1 FAM not valid
+1 HEAD 
+1 TRLR
+1 DATE
+1 NOTE bad note
+1 DATE 1 JUN 2017
+2 INDI id
+2 FAM id
+2 NAME not valid
+2 SEX not valid
+2 BIRT not valid
+2 DEAT not valid
+2 FAMC not valid
+2 FAMS not valid
+2 MARR not valid
+2 HUSB not valid
+2 WIFE not valid
+2 CHIL not valid
+2 DIV not valid
+1 INVALID not valid
+3 INVALID not valid
+4 NOTE not valid

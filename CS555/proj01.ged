@@ -1,0 +1,141 @@
+0 HEAD
+1 SOUR Family Echo
+2 WWW http://www.familyecho.com/
+1 FILE My Family
+1 DATE 23 JAN 2020
+1 DEST ANSTFILE
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 SUBM @I1@
+2 NAME Kirk Vasilas
+1 SUBN
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Kirk /Vasilas/
+2 GIVN Kirk
+2 SURN Vasilas
+2 _MARNM Vasilas
+1 SEX M
+1 BIRT
+2 DATE 9 MAR 1998
+1 FAMC @F1@
+0 @I2@ INDI
+1 NAME Chris /Vasilas/
+2 GIVN Chris
+2 SURN Vasilas
+2 _MARNM Vasilas
+1 SEX M
+1 BIRT
+2 DATE 25 DEC 1959
+1 FAMS @F1@
+1 FAMC @F2@
+0 @I3@ INDI
+1 NAME Katie /Pappas/
+2 GIVN Katie
+2 SURN Pappas
+2 _MARNM Vasilas
+1 SEX F
+1 BIRT
+2 DATE 20 MAR 1960
+1 FAMS @F1@
+1 FAMC @F3@
+0 @I4@ INDI
+1 NAME Christiana /Vasilas/
+2 GIVN Christiana
+2 SURN Vasilas
+2 _MARNM Vasilas
+1 SEX F
+1 BIRT
+2 DATE 19 JUL 1992
+1 FAMC @F1@
+0 @I5@ INDI
+1 NAME Van /Pappas/
+2 GIVN Van
+2 SURN Pappas
+2 _MARNM Pappas
+1 SEX M
+1 BIRT
+2 DATE 12 JAN 1939
+1 DEAT Y
+2 DATE 2000
+1 FAMS @F3@
+0 @I6@ INDI
+1 NAME Kay /Sotiropulous/
+2 GIVN Kay
+2 SURN Sotiropulous
+2 _MARNM Pappas
+1 SEX F
+1 BIRT
+2 DATE 14 FEB 1939
+1 FAMS @F3@
+0 @I7@ INDI
+1 NAME Kirk /Exerovasilas/
+2 GIVN Kirk
+2 SURN Exerovasilas
+2 _MARNM Vasilas
+1 SEX M
+1 BIRT
+2 DATE 8 JUL 1940
+1 DEAT Y
+2 DATE 4 JUN 1975
+1 FAMS @F2@
+0 @I8@ INDI
+1 NAME Barbra /Kaptzis/
+2 GIVN Barbra
+2 SURN Kaptzis
+2 _MARNM Vasilas
+1 SEX F
+1 BIRT
+2 DATE 3 JUN 1940
+1 FAMS @F2@
+1 FAMS @F4@
+0 @I9@ INDI
+1 NAME Guy /Manuel/
+2 GIVN Guy
+2 SURN Manuel
+2 _MARNM Manuel
+1 SEX M
+1 BIRT
+2 DATE 13 NOV 1942
+1 FAMS @F4@
+0 @I10@ INDI
+1 NAME Fred /Manuel/
+2 GIVN Fred
+2 SURN Manuel
+2 _MARNM Manuel
+1 SEX M
+1 BIRT
+2 DATE 11 OCT 1976
+1 FAMC @F4@
+0 @F1@ FAM
+1 HUSB @I2@
+1 WIFE @I3@
+1 CHIL @I1@
+1 CHIL @I4@
+1 MARR
+2 DATE 8 SEP 1985
+2 PLAC New York
+1 _CURRENT Y
+0 @F2@ FAM
+1 HUSB @I7@
+1 WIFE @I8@
+1 CHIL @I2@
+1 MARR
+1 EVEN
+2 TYPE Ending
+1 _CURRENT N
+0 @F3@ FAM
+1 HUSB @I5@
+1 WIFE @I6@
+1 CHIL @I3@
+1 _CURRENT Y
+0 @F4@ FAM
+1 HUSB @I9@
+1 WIFE @I8@
+1 CHIL @I10@
+1 MARR
+2 DATE 4 FEB 1975
+2 PLAC New york
+1 _CURRENT Y
+0 TRLR
