@@ -1,0 +1,282 @@
+0 HEAD
+0|HEAD|Y|
+1 SOUR Family Echo
+1|SOUR|N|Family Echo
+2 WWW http://www.familyecho.com/
+2|WWW|Y|http://www.familyecho.com/
+1 FILE My Family
+1|FILE|N|My Family
+1 DATE 23 JAN 2020
+1|DATE|N|23 JAN 2020
+1 DEST ANSTFILE
+1|DEST|N|ANSTFILE
+1 GEDC
+1|GEDC|N|
+2 VERS 5.5.1
+2|VERS|N|5.5.1
+2 FORM LINEAGE-LINKED
+2|FORM|N|LINEAGE-LINKED
+1 SUBM @I1@
+1|SUBM|N|@I1@
+2 NAME Kirk Vasilas
+2|NAME|N|Kirk Vasilas
+1 SUBN
+1|SUBN|N|
+1 CHAR UTF-8
+1|CHAR|N|UTF-8
+0 @I1@ INDI
+0|INDI|Y|@I1@
+1 NAME Kirk /Vasilas/
+1|NAME|Y|Kirk /Vasilas/
+2 GIVN Kirk
+2|GIVN|N|Kirk
+2 SURN Vasilas
+2|SURN|N|Vasilas
+2 _MARNM Vasilas
+2|_MARNM|N|Vasilas
+1 SEX M
+1|SEX|Y|M
+1 BIRT
+1|BIRT|Y|
+2 DATE 9 MAR 1998
+2|DATE|Y|9 MAR 1998
+1 FAMC @F1@
+1|FAMC|Y|@F1@
+0 @I2@ INDI
+0|INDI|Y|@I2@
+1 NAME Chris /Vasilas/
+1|NAME|Y|Chris /Vasilas/
+2 GIVN Chris
+2|GIVN|N|Chris
+2 SURN Vasilas
+2|SURN|N|Vasilas
+2 _MARNM Vasilas
+2|_MARNM|N|Vasilas
+1 SEX M
+1|SEX|Y|M
+1 BIRT
+1|BIRT|Y|
+2 DATE 25 DEC 1959
+2|DATE|Y|25 DEC 1959
+1 FAMS @F1@
+1|FAMS|N|@F1@
+1 FAMC @F2@
+1|FAMC|Y|@F2@
+0 @I3@ INDI
+0|INDI|Y|@I3@
+1 NAME Katie /Pappas/
+1|NAME|Y|Katie /Pappas/
+2 GIVN Katie
+2|GIVN|N|Katie
+2 SURN Pappas
+2|SURN|N|Pappas
+2 _MARNM Vasilas
+2|_MARNM|N|Vasilas
+1 SEX F
+1|SEX|Y|F
+1 BIRT
+1|BIRT|Y|
+2 DATE 20 MAR 1960
+2|DATE|Y|20 MAR 1960
+1 FAMS @F1@
+1|FAMS|N|@F1@
+1 FAMC @F3@
+1|FAMC|Y|@F3@
+0 @I4@ INDI
+0|INDI|Y|@I4@
+1 NAME Christiana /Vasilas/
+1|NAME|Y|Christiana /Vasilas/
+2 GIVN Christiana
+2|GIVN|N|Christiana
+2 SURN Vasilas
+2|SURN|N|Vasilas
+2 _MARNM Vasilas
+2|_MARNM|N|Vasilas
+1 SEX F
+1|SEX|Y|F
+1 BIRT
+1|BIRT|Y|
+2 DATE 19 JUL 1992
+2|DATE|Y|19 JUL 1992
+1 FAMC @F1@
+1|FAMC|Y|@F1@
+0 @I5@ INDI
+0|INDI|Y|@I5@
+1 NAME Van /Pappas/
+1|NAME|Y|Van /Pappas/
+2 GIVN Van
+2|GIVN|N|Van
+2 SURN Pappas
+2|SURN|N|Pappas
+2 _MARNM Pappas
+2|_MARNM|N|Pappas
+1 SEX M
+1|SEX|Y|M
+1 BIRT
+1|BIRT|Y|
+2 DATE 12 JAN 1939
+2|DATE|Y|12 JAN 1939
+1 DEAT Y
+1|DEAT|Y|Y
+2 DATE 2000
+2|DATE|Y|2000
+1 FAMS @F3@
+1|FAMS|N|@F3@
+0 @I6@ INDI
+0|INDI|Y|@I6@
+1 NAME Kay /Sotiropulous/
+1|NAME|Y|Kay /Sotiropulous/
+2 GIVN Kay
+2|GIVN|N|Kay
+2 SURN Sotiropulous
+2|SURN|N|Sotiropulous
+2 _MARNM Pappas
+2|_MARNM|N|Pappas
+1 SEX F
+1|SEX|Y|F
+1 BIRT
+1|BIRT|Y|
+2 DATE 14 FEB 1939
+2|DATE|Y|14 FEB 1939
+1 FAMS @F3@
+1|FAMS|N|@F3@
+0 @I7@ INDI
+0|INDI|Y|@I7@
+1 NAME Kirk /Exerovasilas/
+1|NAME|Y|Kirk /Exerovasilas/
+2 GIVN Kirk
+2|GIVN|N|Kirk
+2 SURN Exerovasilas
+2|SURN|N|Exerovasilas
+2 _MARNM Vasilas
+2|_MARNM|N|Vasilas
+1 SEX M
+1|SEX|Y|M
+1 BIRT
+1|BIRT|Y|
+2 DATE 8 JUL 1940
+2|DATE|Y|8 JUL 1940
+1 DEAT Y
+1|DEAT|Y|Y
+2 DATE 4 JUN 1975
+2|DATE|Y|4 JUN 1975
+1 FAMS @F2@
+1|FAMS|N|@F2@
+0 @I8@ INDI
+0|INDI|Y|@I8@
+1 NAME Barbra /Kaptzis/
+1|NAME|Y|Barbra /Kaptzis/
+2 GIVN Barbra
+2|GIVN|N|Barbra
+2 SURN Kaptzis
+2|SURN|N|Kaptzis
+2 _MARNM Vasilas
+2|_MARNM|N|Vasilas
+1 SEX F
+1|SEX|Y|F
+1 BIRT
+1|BIRT|Y|
+2 DATE 3 JUN 1940
+2|DATE|Y|3 JUN 1940
+1 FAMS @F2@
+1|FAMS|N|@F2@
+1 FAMS @F4@
+1|FAMS|N|@F4@
+0 @I9@ INDI
+0|INDI|Y|@I9@
+1 NAME Guy /Manuel/
+1|NAME|Y|Guy /Manuel/
+2 GIVN Guy
+2|GIVN|N|Guy
+2 SURN Manuel
+2|SURN|N|Manuel
+2 _MARNM Manuel
+2|_MARNM|N|Manuel
+1 SEX M
+1|SEX|Y|M
+1 BIRT
+1|BIRT|Y|
+2 DATE 13 NOV 1942
+2|DATE|Y|13 NOV 1942
+1 FAMS @F4@
+1|FAMS|N|@F4@
+0 @I10@ INDI
+0|INDI|Y|@I10@
+1 NAME Fred /Manuel/
+1|NAME|Y|Fred /Manuel/
+2 GIVN Fred
+2|GIVN|N|Fred
+2 SURN Manuel
+2|SURN|N|Manuel
+2 _MARNM Manuel
+2|_MARNM|N|Manuel
+1 SEX M
+1|SEX|Y|M
+1 BIRT
+1|BIRT|Y|
+2 DATE 11 OCT 1976
+2|DATE|Y|11 OCT 1976
+1 FAMC @F4@
+1|FAMC|Y|@F4@
+0 @F1@ FAM
+0|FAM|Y|@F1@
+1 HUSB @I2@
+1|HUSB|Y|@I2@
+1 WIFE @I3@
+1|WIFE|Y|@I3@
+1 CHIL @I1@
+1|CHIL|Y|@I1@
+1 CHIL @I4@
+1|CHIL|Y|@I4@
+1 MARR
+1|MARR|Y|
+2 DATE 8 SEP 1985
+2|DATE|Y|8 SEP 1985
+2 PLAC New York
+2|PLAC|N|New York
+1 _CURRENT Y
+1|_CURRENT|N|Y
+0 @F2@ FAM
+0|FAM|Y|@F2@
+1 HUSB @I7@
+1|HUSB|Y|@I7@
+1 WIFE @I8@
+1|WIFE|Y|@I8@
+1 CHIL @I2@
+1|CHIL|Y|@I2@
+1 MARR
+1|MARR|Y|
+1 EVEN
+1|EVEN|N|
+2 TYPE Ending
+2|TYPE|N|Ending
+1 _CURRENT N
+1|_CURRENT|N|N
+0 @F3@ FAM
+0|FAM|Y|@F3@
+1 HUSB @I5@
+1|HUSB|Y|@I5@
+1 WIFE @I6@
+1|WIFE|Y|@I6@
+1 CHIL @I3@
+1|CHIL|Y|@I3@
+1 _CURRENT Y
+1|_CURRENT|N|Y
+0 @F4@ FAM
+0|FAM|Y|@F4@
+1 HUSB @I9@
+1|HUSB|Y|@I9@
+1 WIFE @I8@
+1|WIFE|Y|@I8@
+1 CHIL @I10@
+1|CHIL|Y|@I10@
+1 MARR
+1|MARR|Y|
+2 DATE 4 FEB 1975
+2|DATE|Y|4 FEB 1975
+2 PLAC New york
+2|PLAC|N|New york
+1 _CURRENT Y
+1|_CURRENT|N|Y
+0 TRLR
+0|TRLR|Y|

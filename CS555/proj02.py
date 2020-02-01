@@ -48,8 +48,9 @@ def parse_line(line):
 
 
 if __name__ == "__main__":
-    #path = r'\Users\USER\Documents\coding\Class_Work\CS555\proj02_test.ged' #my windows pc
-    path = r'/home/kcv/Class_Work/CS555/proj02_test.ged'
+    #path = r'\Users\USER\Documents\coding\Class_Work\CS555\proj02_test.ged' #my windows pc sample
+    path = r'\Users\USER\Documents\coding\Class_Work\CS555\proj01.ged'
+    #path = r'/home/kcv/Class_Work/CS555/proj02_test.ged' #linux laptop
     ged = open(path, 'r')
     lines = ged.readlines()
     i = 0
