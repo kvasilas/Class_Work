@@ -43,5 +43,5 @@ __pycache__/
 *.512
 c_cpp_properties.json
 arduino.json
-.vscode
+.vscode/
 _config.yml
