@@ -4,7 +4,7 @@ In this repository I have my assignments, notes, and projects from different cla
 
 The following classes count toward my Bachelors in Computer Engineering at Stevens.  All classes with codes starting with 500 or higher are graduate level classes taken.  
 
-CPE stands for Computer Engineering, EE for Electrical Engineering, and FE for Financial Engineering.
+CPE stands for Computer Engineering, EE for Electrical Engineering, CS for Computer Science and FE for Financial Engineering.
 
 ## List of Classes
 - CPE 322 - Engineering Design 6
