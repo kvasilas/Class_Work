@@ -2,6 +2,7 @@
 // Include Header Files
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <time.h>
 #include "TypeDefines.h"
 #include "TimerMgrHeader.h"
@@ -53,7 +54,8 @@ void function3(void *arg)
 	print_time_msg(3);
 }
 
-bool check_valid(err_val){
+bool check_valid(INT8U err_val)
+{
 	if (err_val != 0)
 	{
 		printf("%d", err_val);
@@ -78,7 +80,7 @@ int main(void)
 	print_program_info();
 
 	// Initialize the OS Tick
-	OSTickInitialize();
+	//OSTickInitialize();
 
 	fprintf(stdout, "OS Tick Initialization completed successfully");
 
@@ -93,19 +95,19 @@ int main(void)
 	
 	// Create Timer1
 	// Provide the required arguments in the function call
-	timer_obj1 = RTOSTmrCreate();
+	timer_obj1 = RTOSTmrCreate(50, 50, RTOS_TMR_PERIODIC, function1, NULL, timer_name[0], &err_val);
 	// Check the return value and determine if it created successfully or not
 	if (check_valid(err_val)== false){return 0;}
 	
 	// Create Timer2
 	// Provide the required arguments in the function call
-	timer_obj2 = RTOSTmrCreate();
+	timer_obj2 = RTOSTmrCreate(30, 30, RTOS_TMR_PERIODIC, function2, NULL, timer_name[1], &err_val);
 	// Check the return value and determine if it created successfully or not
 	if (check_valid(err_val) == false){return 0;}
 	
 	// Create Timer3
 	// Provide the required arguments in the function call
-	timer_obj3 = RTOSTmrCreate();
+	timer_obj3 = RTOSTmrCreate(100, 0, RTOS_TMR_ONE_SHOT, function3, NULL, timer_name[2], &err_val);
 	// Check the return value and determine if it created successfully or not
 	if (check_valid(err_val) == false){return 0;}
 	

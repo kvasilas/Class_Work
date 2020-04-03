@@ -1,5 +1,9 @@
 Kirk Vasilas
 
+Compiled on Windows 10 using cygwin 64
+GCC version 6.4.0 (GCC)
+C++ Version 11
+
 Timer Manager
 =============
 
@@ -29,8 +33,3 @@ run below commands in the extracted folder
 -> make
 -> ./TimerMgr
 (You need to provide the input for the number of Timers required in the pool for the OS)
-
-
-different files
-    Application.c
-    TimerAPI.c
