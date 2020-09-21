@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/kcv/fpga/690_class/full_adder/full_adder_tb_isim_beh.exe" -prj "/home/kcv/fpga/690_class/full_adder/full_adder_tb_beh.prj" "work.full_adder_tb" 

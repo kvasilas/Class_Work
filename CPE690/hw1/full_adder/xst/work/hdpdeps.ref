@@ -1,0 +1,7 @@
+V3 3
+FL /home/kcv/fpga/690_class/full_adder/full_adder.vhd 2020/09/14.22:13:18 P.20131013
+EN work/full_adder 1600136052 \
+      FL /home/kcv/fpga/690_class/full_adder/full_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/full_adder/gate_level 1600136053 \
+      FL /home/kcv/fpga/690_class/full_adder/full_adder.vhd EN work/full_adder 1600136052

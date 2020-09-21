@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/home/kcv/fpga/690_class/full_adder/full_adder.xst" -ofn "/home/kcv/fpga/690_class/full_adder/full_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-7 full_adder.ngc full_adder.ngd  
+cpldfit -intstyle ise -p xc2c256-7-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 full_adder.ngd 
