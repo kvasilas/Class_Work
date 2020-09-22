@@ -1,0 +1,212 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C256144 | XC2C256-7-TQ144
+
+DEVICE | 2C256 | 2C256144 | 
+
+NETWORK | pr_encoder | 0 | 0 | 1073758214 | 0
+
+MACROCELL_INSTANCE | NULL | Z<0>_MC | pr_encoder_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s1_II/UIM | 191 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s1_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s0_II/UIM | 193 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s0_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s3_II/UIM | 195 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s3_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s2_II/UIM | 197 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s2_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Z<0>_MC.Q | 199 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | Z<0>_MC.Q | Z<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Z<0>_MC.SI | Z<0>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s1_II/UIM | 191 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s1_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s0_II/UIM | 193 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s0_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s3_II/UIM | 195 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s3_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s2_II/UIM | 197 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s2_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Z<0>_MC.D1 | 189 | ? | 0 | 0 | Z<0>_MC | NULL | NULL | Z<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Z<0>_MC.D2 | 188 | ? | 0 | 0 | Z<0>_MC | NULL | NULL | Z<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | s1_II/UIM | IV_FALSE | s0_II/UIM
+SPPTERM | 3 | IV_FALSE | s0_II/UIM | IV_TRUE | s3_II/UIM | IV_FALSE | s2_II/UIM
+
+SRFF_INSTANCE | Z<0>_MC.REG | Z<0>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Z<0>_MC.D | 187 | ? | 0 | 0 | Z<0>_MC | NULL | NULL | Z<0>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Z<0>_MC.Q | 198 | ? | 0 | 0 | Z<0>_MC | NULL | NULL | Z<0>_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | s1_II | pr_encoder_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | s1 | 190 | PI | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | s1_II/UIM | 191 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s1_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | s0_II | pr_encoder_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | s0 | 192 | PI | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | s0_II/UIM | 193 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s0_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | s3_II | pr_encoder_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | s3 | 194 | PI | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | s3_II/UIM | 195 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s3_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | s2_II | pr_encoder_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | s2 | 196 | PI | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | s2_II/UIM | 197 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s2_II | 0 | 5 | II_IMUX
+
+OUTPUT_INSTANCE | 0 | Z<0> | pr_encoder_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Z<0>_MC.Q | 199 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | Z<0>_MC.Q | Z<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Z<0> | 200 | PO | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | Z<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | Z<1>_MC | pr_encoder_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s1_II/UIM | 191 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s1_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s0_II/UIM | 193 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s0_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s3_II/UIM | 195 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s3_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s2_II/UIM | 197 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s2_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Z<1>_MC.Q | 205 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | Z<1>_MC.Q | Z<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Z<1>_MC.SI | Z<1>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s1_II/UIM | 191 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s1_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s0_II/UIM | 193 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s0_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s3_II/UIM | 195 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s3_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s2_II/UIM | 197 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | s2_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Z<1>_MC.D1 | 203 | ? | 0 | 0 | Z<1>_MC | NULL | NULL | Z<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Z<1>_MC.D2 | 202 | ? | 0 | 0 | Z<1>_MC | NULL | NULL | Z<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | s1_II/UIM | IV_FALSE | s0_II/UIM | IV_TRUE | s3_II/UIM
+SPPTERM | 3 | IV_FALSE | s1_II/UIM | IV_FALSE | s0_II/UIM | IV_TRUE | s2_II/UIM
+
+SRFF_INSTANCE | Z<1>_MC.REG | Z<1>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Z<1>_MC.D | 201 | ? | 0 | 0 | Z<1>_MC | NULL | NULL | Z<1>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Z<1>_MC.Q | 204 | ? | 0 | 0 | Z<1>_MC | NULL | NULL | Z<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Z<1> | pr_encoder_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Z<1>_MC.Q | 205 | ? | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | Z<1>_MC.Q | Z<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Z<1> | 206 | PO | 0 | 0 | pr_encoder_COPY_0_COPY_0 | NULL | NULL | Z<1> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 3 | Z<0>_MC | 1 | NULL | 0 | Z<0> | 1 | 143 | 51200
+FBPIN | 4 | Z<1>_MC | 1 | NULL | 0 | Z<1> | 1 | 142 | 49152
+FBPIN | 6 | NULL | 0 | s0_II | 1 | NULL | 0 | 140 | 49152
+FBPIN | 12 | NULL | 0 | s1_II | 1 | NULL | 0 | 139 | 49152
+FBPIN | 13 | NULL | 0 | s2_II | 1 | NULL | 0 | 138 | 49152
+FBPIN | 14 | NULL | 0 | s3_II | 1 | NULL | 0 | 137 | 49152
+
+FB_INSTANCE | FOOBAR2_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR3_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR7_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR10_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR11_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR12_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR13_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR15_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR9_ | FOOBAR9__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR10_ | FOOBAR10__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR11_ | FOOBAR11__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR12_ | FOOBAR12__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR13_ | FOOBAR13__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR14_ | FOOBAR14__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR15_ | FOOBAR15__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR16_ | FOOBAR16__ctinst | pr_encoder_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 4
+PLA_TERM | 0 | 
+SPPTERM | 2 | IV_TRUE | s1_II/UIM | IV_FALSE | s0_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 3 | IV_FALSE | s0_II/UIM | IV_TRUE | s3_II/UIM | IV_FALSE | s2_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 3 | IV_FALSE | s1_II/UIM | IV_FALSE | s0_II/UIM | IV_TRUE | s3_II/UIM
+PLA_TERM | 3 | 
+SPPTERM | 3 | IV_FALSE | s1_II/UIM | IV_FALSE | s0_II/UIM | IV_TRUE | s2_II/UIM
+
+BUSINFO | Z<1:0> | 2 | 0 | 1 | Z<0> | 1 | Z<1> | 0
+
+IOSTD | LVCMOS18
+s1 | LVCMOS18
+s0 | LVCMOS18
+s3 | LVCMOS18
+s2 | LVCMOS18
+Z<0> | LVCMOS18
+Z<1> | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 5 | s0 | 140 | 6 | s1 | 139 | 7 | s2 | 138 | 8 | s3 | 137
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | -1 | -1 | 5 | 6 | 7 | 8 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+

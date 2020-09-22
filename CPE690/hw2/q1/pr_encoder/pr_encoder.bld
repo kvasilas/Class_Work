@@ -1,0 +1,35 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -i -p xc2c256-TQ144-7 pr_encoder.ngc pr_encoder.ngd
+
+Reading NGO file "/home/kcv/Class_Work/CPE690/hw2/q1/pr_encoder/pr_encoder.ngc"
+...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 396204 kilobytes
+
+Writing NGD file "pr_encoder.ngd" ...
+Total REAL time to NGDBUILD completion:  9 sec
+Total CPU time to NGDBUILD completion:   9 sec
+
+Writing NGDBUILD log file "pr_encoder.bld"...

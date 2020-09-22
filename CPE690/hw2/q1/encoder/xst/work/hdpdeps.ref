@@ -1,8 +1,0 @@
-V3 3
-FL /home/kcv/Class_Work/CPE690/hw2/q1/encoder/pr_encoder.vhd 2020/09/20.22:45:46 P.20131013
-EN work/pr_encoder 1600659515 \
-      FL /home/kcv/Class_Work/CPE690/hw2/q1/encoder/pr_encoder.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/pr_encoder/dataflow 1600659516 \
-      FL /home/kcv/Class_Work/CPE690/hw2/q1/encoder/pr_encoder.vhd \
-      EN work/pr_encoder 1600659515

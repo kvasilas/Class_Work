@@ -1,0 +1,24 @@
+MDF Database:  version 1.0
+MDF_INFO | pr_encoder | XC2C256-7-TQ144
+MACROCELL | 0 | 2 | Z<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | s1  | s0  | s3  | s2
+INPUTP | 4 | 213 | 214 | 211 | 212
+EQ | 2 | 
+   Z<0> = s1 & !s0
+	# !s0 & s3 & !s2;	// (2 pt, 4 inp)
+
+MACROCELL | 0 | 3 | Z<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | s1  | s0  | s3  | s2
+INPUTP | 4 | 213 | 214 | 211 | 212
+EQ | 2 | 
+   Z<1> = !s1 & !s0 & s3
+	# !s1 & !s0 & s2;	// (2 pt, 4 inp)
+
+PIN | s1 | 64 | 16 | LVCMOS18 | 213 | 2 | 0 | 2 | 0 | 3
+PIN | s0 | 64 | 16 | LVCMOS18 | 214 | 2 | 0 | 2 | 0 | 3
+PIN | s3 | 64 | 16 | LVCMOS18 | 211 | 2 | 0 | 2 | 0 | 3
+PIN | s2 | 64 | 16 | LVCMOS18 | 212 | 2 | 0 | 2 | 0 | 3
+PIN | Z<0> | 536871040 | 0 | LVCMOS18 | 218
+PIN | Z<1> | 536871040 | 0 | LVCMOS18 | 217

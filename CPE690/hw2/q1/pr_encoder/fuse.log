@@ -1,0 +1,22 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/kcv/Class_Work/CPE690/hw2/q1/pr_encoder/pr_encoder_tb_isim_beh.exe -prj /home/kcv/Class_Work/CPE690/hw2/q1/pr_encoder/pr_encoder_tb_beh.prj work.pr_encoder_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/kcv/Class_Work/CPE690/hw2/q1/pr_encoder/pr_encoder.vhd" into library work
+Parsing VHDL file "/home/kcv/Class_Work/CPE690/hw2/q1/pr_encoder/pr_encoder_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95852 KB
+Fuse CPU Usage: 1920 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture dataflow of entity pr_encoder [pr_encoder_default]
+Compiling architecture behavior of entity pr_encoder_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable /home/kcv/Class_Work/CPE690/hw2/q1/pr_encoder/pr_encoder_tb_isim_beh.exe
+Fuse Memory Usage: 399424 KB
+Fuse CPU Usage: 1990 ms
+GCC CPU Usage: 740 ms

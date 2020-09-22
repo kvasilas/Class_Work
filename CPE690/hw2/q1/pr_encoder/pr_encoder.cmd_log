@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/kcv/Class_Work/CPE690/hw2/q1/pr_encoder/pr_encoder.xst" -ofn "/home/kcv/Class_Work/CPE690/hw2/q1/pr_encoder/pr_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-7 pr_encoder.ngc pr_encoder.ngd  
+cpldfit -intstyle ise -p xc2c256-7-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 pr_encoder.ngd 
+XSLTProcess pr_encoder_build.xml 
+tsim -intstyle ise pr_encoder pr_encoder.nga 
+taengine -intstyle ise -f pr_encoder -w --format html1 -l pr_encoder_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i pr_encoder 
