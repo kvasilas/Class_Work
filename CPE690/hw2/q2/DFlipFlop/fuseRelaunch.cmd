@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/kcv/Class_Work/CPE690/hw2/q2/DFlipFlop/shift_reg_tb_isim_beh.exe" -prj "/home/kcv/Class_Work/CPE690/hw2/q2/DFlipFlop/shift_reg_tb_beh.prj" "work.shift_reg_tb" 

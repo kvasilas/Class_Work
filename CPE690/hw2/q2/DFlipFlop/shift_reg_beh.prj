@@ -1,0 +1,2 @@
+vhdl work "DFF.vhd"
+vhdl work "shift_reg.vhd"

@@ -1,0 +1,3 @@
+vhdl work "DFF.vhd"
+vhdl work "shift_reg.vhd"
+vhdl work "shift_reg_tb.vhd"
