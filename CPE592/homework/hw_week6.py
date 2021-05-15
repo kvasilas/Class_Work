@@ -6,7 +6,20 @@
 #
 # 3/20/2021
 
-from math import pow
+from math import pow, floor
+
+def gcd(x, y):
+	a = max(x, y)
+	b = min(x, y)
+	k = 1
+	while k != 0:
+		k = a - b * floor(a/b)
+		if k == 0:
+			return b
+		else:
+			a = b
+			b = k
+	return b
 
 def decrypt(C,d,n):
     dec_bit= 1
@@ -15,9 +28,21 @@ def decrypt(C,d,n):
         dec_bit = dec_bit * num
     return dec_bit % n 
 
+def generate_e(y):
+    e = 3
+    while gcd(y,e) != 1:
+        e = e + 1
+    return e
+
+def generate_d(e,y):
+    d = e
+    while (d * e) % y != 1:
+	    d = d + 1
+    return d
+
 # Take in message string
-# msg = "Kirk Vasilas"
-msg = "rsa"
+msg = "kirkvasilas"
+# msg = "rsa"
 
 # Convert message to array or ints
 msg_array = []
@@ -30,8 +55,8 @@ p=5
 q=11
 n = p*q
 y = (p-1)*(q-1)
-e = 7 #TODO assign random number that is reletively prime to y
-d = 23 #TODO still kinda confused on this look at puc
+e = generate_e(y)
+d = generate_d(e,y)
 
 pub_key = [e,n]
 pri_key = [d,n]

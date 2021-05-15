@@ -1,0 +1,10 @@
+Public Key  : [3, 55]
+Private Key : [27, 55]
+
+Message : kirkvasilas
+Cipher MSG : knbkanwa
+Message Array : [11, 9, 18, 11, 22, 1, 19, 9, 12, 1, 19]
+Cipher Array  : [11, 14, 2, 11, 33, 1, 39, 14, 23, 1, 39]
+
+Decrypted Array : [11, 9, 18, 11, 22, 1, 19, 9, 12, 1, 19]
+Decrypted MSG : kirkvasilas
